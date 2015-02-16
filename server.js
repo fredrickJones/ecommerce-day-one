@@ -2,23 +2,30 @@
 var Express = require('express'),
 	BodyParser = require('body-parser'),
 	Mongoose = require('mongoose'),
-	Customer = require('./lib/models/customerModel'),
-	Product = require('./lib/models/productModel');
+	Migrate = require('migrate');
 
-var App = Express();
+var	customer = require('./lib/models/customerModel'),
+	product = require('./lib/models/productModel');
+
 var port = 9099;
 var mongoUri = 'mongodb://localhost:/ecommerce';
+var app = Express();
+
 
 Mongoose.connect(mongoUri);
-Mongoose.connection.once('open', function() {
+var connection = Mongoose.connection;
+
+connection.once('open', function() {
 	console.log('connected to db at ' + mongoUri);
 });
 
-App.use(BodyParser.json());
+connection.on('error', function() {
+	console.log('error connecting to ' + mongoUri);
+});
 
 
+app.use(BodyParser.json());
 
-
-App.listen(port, function() {
-	console.log('listening on ' + port);
+app.listen(port, function() {
+	console.log('listening on port ' + port);
 });

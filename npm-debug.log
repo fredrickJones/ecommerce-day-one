@@ -1,0 +1,145 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'i', 'migrate', '-g' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose cache add [ 'migrate', null ]
+5 verbose cache add name=undefined spec="migrate" args=["migrate",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'migrate',
+6 verbose parsed url   path: 'migrate',
+6 verbose parsed url   href: 'migrate' }
+7 silly lockFile ce5070ef-migrate migrate
+8 verbose lock migrate /Users/Fredrick/.npm/ce5070ef-migrate.lock
+9 silly lockFile ce5070ef-migrate migrate
+10 silly lockFile ce5070ef-migrate migrate
+11 verbose addNamed [ 'migrate', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile c47f974e-migrate migrate@
+14 verbose lock migrate@ /Users/Fredrick/.npm/c47f974e-migrate.lock
+15 silly addNameRange { name: 'migrate', range: '*', hasData: false }
+16 verbose request where is /migrate
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id d63a6db82b7c2576
+19 verbose url raw /migrate
+20 verbose url resolving [ 'https://registry.npmjs.org/', './migrate' ]
+21 verbose url resolved https://registry.npmjs.org/migrate
+22 verbose request where is https://registry.npmjs.org/migrate
+23 info trying registry request attempt 1 at 16:48:38
+24 verbose etag "BVGUTM2XBVNQCHXQ4EAE3ZCDC"
+25 http GET https://registry.npmjs.org/migrate
+26 http 304 https://registry.npmjs.org/migrate
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Sat, 14 Feb 2015 23:48:38 GMT',
+27 silly registry.get     server: 'Apache',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'last-modified': 'Sat, 14 Feb 2015 23:48:38 GMT',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     etag: '"BVGUTM2XBVNQCHXQ4EAE3ZCDC"',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-sjc3133-SJC',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1423957718.489664,VS0,VE434',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'content-length': '0',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 verbose etag https://registry.npmjs.org/migrate from cache
+29 silly addNameRange number 2 { name: 'migrate', range: '*', hasData: true }
+30 silly addNameRange versions [ 'migrate',
+30 silly addNameRange   [ '0.0.1',
+30 silly addNameRange     '0.0.2',
+30 silly addNameRange     '0.0.3',
+30 silly addNameRange     '0.0.4',
+30 silly addNameRange     '0.0.5',
+30 silly addNameRange     '0.1.0',
+30 silly addNameRange     '0.1.1',
+30 silly addNameRange     '0.1.2',
+30 silly addNameRange     '0.1.3',
+30 silly addNameRange     '0.1.4',
+30 silly addNameRange     '0.1.5',
+30 silly addNameRange     '0.1.6',
+30 silly addNameRange     '0.2.0' ] ]
+31 verbose addNamed [ 'migrate', '0.2.0' ]
+32 verbose addNamed [ '0.2.0', '0.2.0' ]
+33 silly lockFile abea234d-migrate-0-2-0 migrate@0.2.0
+34 verbose lock migrate@0.2.0 /Users/Fredrick/.npm/abea234d-migrate-0-2-0.lock
+35 silly lockFile abea234d-migrate-0-2-0 migrate@0.2.0
+36 silly lockFile abea234d-migrate-0-2-0 migrate@0.2.0
+37 silly lockFile c47f974e-migrate migrate@
+38 silly lockFile c47f974e-migrate migrate@
+39 silly resolved [ { name: 'migrate',
+39 silly resolved     version: '0.2.0',
+39 silly resolved     description: 'Abstract migration framework for node',
+39 silly resolved     keywords: [ 'migrate', 'migrations' ],
+39 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+39 silly resolved     repository:
+39 silly resolved      { type: 'git',
+39 silly resolved        url: 'git://github.com/visionmedia/node-migrate' },
+39 silly resolved     bin: { migrate: './bin/migrate' },
+39 silly resolved     devDependencies: { should: '>= 0.0.1' },
+39 silly resolved     main: 'index',
+39 silly resolved     engines: { node: '>= 0.4.x' },
+39 silly resolved     gitHead: 'f6cc139934f4fc8a0451e6f5b74a7439cf5f4976',
+39 silly resolved     bugs: { url: 'https://github.com/visionmedia/node-migrate/issues' },
+39 silly resolved     homepage: 'https://github.com/visionmedia/node-migrate',
+39 silly resolved     _id: 'migrate@0.2.0',
+39 silly resolved     scripts: {},
+39 silly resolved     _shasum: '7ec775925a3c175cb628d490ff6abf5439c5a6bf',
+39 silly resolved     _from: 'migrate@',
+39 silly resolved     _npmVersion: '2.1.8',
+39 silly resolved     _nodeVersion: '0.10.33',
+39 silly resolved     _npmUser: { name: 'joaosa', email: 'jjadonotenter@gmail.com' },
+39 silly resolved     maintainers: [ [Object], [Object] ],
+39 silly resolved     dist:
+39 silly resolved      { shasum: '7ec775925a3c175cb628d490ff6abf5439c5a6bf',
+39 silly resolved        tarball: 'http://registry.npmjs.org/migrate/-/migrate-0.2.0.tgz' },
+39 silly resolved     directories: {},
+39 silly resolved     _resolved: 'https://registry.npmjs.org/migrate/-/migrate-0.2.0.tgz',
+39 silly resolved     readme: 'ERROR: No README data found!' } ]
+40 info install migrate@0.2.0 into /usr/local/lib
+41 info installOne migrate@0.2.0
+42 verbose lib/node_modules/migrate unbuild
+43 verbose tar unpack /Users/Fredrick/.npm/migrate/0.2.0/package.tgz
+44 silly lockFile d29635b5-r-local-lib-node-modules-migrate tar:///usr/local/lib/node_modules/migrate
+45 verbose lock tar:///usr/local/lib/node_modules/migrate /Users/Fredrick/.npm/d29635b5-r-local-lib-node-modules-migrate.lock
+46 silly lockFile 1ba74e67-ck-npm-migrate-0-2-0-package-tgz tar:///Users/Fredrick/.npm/migrate/0.2.0/package.tgz
+47 verbose lock tar:///Users/Fredrick/.npm/migrate/0.2.0/package.tgz /Users/Fredrick/.npm/1ba74e67-ck-npm-migrate-0-2-0-package-tgz.lock
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 error Error: EACCES, mkdir '/usr/local/lib/node_modules/migrate'
+49 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/migrate']
+49 error   errno: 3,
+49 error   code: 'EACCES',
+49 error   path: '/usr/local/lib/node_modules/migrate',
+49 error   fstream_type: 'Directory',
+49 error   fstream_path: '/usr/local/lib/node_modules/migrate',
+49 error   fstream_class: 'DirWriter',
+49 error   fstream_stack:
+49 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+49 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+49 error      'Object.oncomplete (fs.js:108:15)' ] }
+50 error Please try running this command again as root/Administrator.
+51 error System Darwin 14.1.0
+52 error command "node" "/usr/local/bin/npm" "i" "migrate" "-g"
+53 error cwd /Users/Fredrick/Desktop/devMountain/ecommerce-day-one
+54 error node -v v0.10.35
+55 error npm -v 1.4.28
+56 error path /usr/local/lib/node_modules/migrate
+57 error fstream_path /usr/local/lib/node_modules/migrate
+58 error fstream_type Directory
+59 error fstream_class DirWriter
+60 error code EACCES
+61 error errno 3
+62 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/migrate'
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+63 error fstream_stack Object.oncomplete (fs.js:108:15)
+64 verbose exit [ 3, true ]
